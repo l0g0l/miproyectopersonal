@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+
+    h2 {
+        color:grey;
+    }
+    </style>
+</head>
+<body>
+
+    <h2><srong><u>Únete al Club Viejuner</u></strong></h2>
+
+    <img src="https://raw.githubusercontent.com/TheBridge-FullStackDeveloper/html-pp-formularios/master/abueletes.jpg" alt="Club Viejuner" width="500px" height="200px">
+    <caption>Viejuners felices en sus bicis</caption>
+    <br>
+    <br>
+
+    <form action="http://w3schools.com/action_page.php" method="GET" target="_blank">
+        <fieldset>
+            <legend><b>Sobre ti</b></legend>
+                <br>
+    
+                <label for="name"><b>Nombre</b></label>&nbsp;
+                <input type="text" name="name" id="_name" tabindex="1" placeholder="Escribe tu Nombre" required autofocus>&nbsp;&nbsp;&nbsp;
+
+                <label for="apellidos">Apellidos</label>&nbsp;
+                <input type="text" name="apellidos" id="_apellidos" placeholder="Escribe tus Apellidos" tabindex="2">
+                <br>
+                <br>
+
+                <label for="edad" >Edad</label>&nbsp;
+                <input type="number" id="_edad" name="edad" min="1" max="120" tabindex="3">
+                <br>
+                <br>
+                
+                <label>Sexo</label>
+                <br>
+                <label for="_dcha">Masculino</label>
+                <input type="radio" name="sexo" id="_izq" value="izq" checked>
+                
+                <label for="_dcha">Femenino</label>
+                <input type="radio" name="sexo" id="_dcha" value="dcha" checked>
+                <br>
+                <br>
+
+                <label for="_Derecha">¡Me siento Viejuner!</label>&nbsp;
+                <input type="checkbox" name="viejuner" id="_Derecha" value="Der" tabindex="4" checked>
+                <br>
+                <br>
+
+                <label for="bio">Si te apetece, cuéntanos algo sobre ti</label>
+                <br>
+                <textarea name="bio" id="_bio" style="width:250px; height:100px"></textarea>
+                <br>
+                <br>
+            
+        </fieldset>
+        <br>
+        
+        <fieldset>
+            <legend><b>Tus datos de contacto</b></legend>
+                <br>
+
+                <label for="email">Correo electrónico</label>&nbsp;
+                <input type="email" id="_email" name="email" required tabindex="5">
+                <br>
+                <br>
+
+                <label for="telefono">Teléfono</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="tel" id="_telefono" name="telefono" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" placeholder="123456789" required tabindex="6">
+                               
+                <br>
+                <br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend><b>Los ladronzuelos de bicicletas</b></legend>
+                <br>
+
+                <label for="dia">Día</label>&nbsp;
+                <input type="date" name="dia" id="_dia" autofocus>
+                <br>
+                <br>
+
+                <label for="hora">Hora</label>&nbsp;
+                <input type="time" id="hora" name="_hora">
+                <br>
+                <br>
+
+                <label for="color">¿De qué color te gustaría que fuera?</label>&nbsp;
+                <input type="color" id="color" name="_color">
+                <br>
+                <br>
+
+                <label for="presu">Dinos cuál es tu presupuesto</label>&nbsp;
+                <input type="range" id="_presu" name="presu" min="0" max="100">
+                <br>
+                <br>
+
+                <label for="bicis">Tipo de bicicleta</label>&nbsp;
+                <select name="bicis" id="_bicis" required>
+                    <optgroup label="Paseo">
+                        <option value="Señorial">Señorial</option>
+                        <option value="antipaseo">Antipaseo</option>
+                        <option value="pedelhombro">Por Encima del Hombro</option>
+                    </optgroup>
+                        <optgroup label="Montaña">
+                        <option value="gamusinos">Gamusinos</option>
+                        <option value="Hueleflores">Hueleflores premium</option>
+                        <option value="Fango">Fango lover</option>
+                    </optgroup>
+                        <optgroup label="Carreras">
+                        <option value="Metroymedio">Metroymedio</option>
+                        <option value="fluorescente">H3 de la tarde. Fluorescente edition</option>
+                        <option value="Grupitors">Grupitors</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br> 
+
+                <label for="accesorios">¿Le quieres añadir algún accesorio?</label>&nbsp;
+                <br>
+                <br>
+                <select name="accesorios" id="_accesorios" multiple>
+                    <br>
+                        <option value="Ruedines">Ruedines</option>
+                        <option value="Pegatinas">Pegatinas</option>
+                        <option value="Cestita">Cestita</option>
+                        <option value="Bomba">Bomba de aire</option>
+                </select>
+                <br>
+                <br>
+
+                <label for="marcas">¿Qué marca prefieres?</label>&nbsp;
+                <input list="marcas" id="_marcas" name="marcas">
+                <datalist id="marcas">
+                    <option value="specialized">Specialized</option>
+                    <option value="trek">Trek</option>
+                    <option value="merida">Mérida</option>
+                    <option value="scott">Scott</option>
+                    <option value="giant">Giant</option>
+                </datalist>
+
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar" tabindex="7">&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Reset">      
+    
+    </form>
+
+
+</body>
+</html>
